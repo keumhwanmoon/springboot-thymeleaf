@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 
@@ -16,8 +17,11 @@ import javax.validation.Valid;
 public class FormController {
 
     @GetMapping("/form")
-    public String form(PersonForm personForm) {
-        return "form";
+    public ModelAndView form(PersonForm personForm) {
+
+        ModelAndView mv = new ModelAndView("/form");
+
+        return mv;
     }
 
     @PostMapping("/form")
