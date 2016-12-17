@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Created by Jason on 2016-08-29.
+ * @author jason, Moon
+ * @since 2016-08-29.
  */
 @Controller
 public class WelcomeController {
